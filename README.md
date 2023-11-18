@@ -22,7 +22,7 @@ A programming language is a tool for the scientist to get their job done, while 
 
 ## What's the core aspects of a programming language?
 
-Keeping it simple and with academia in mind, the four most important aspects of a programming language are:
+Keeping it simple and with academia in mind, the most important aspects of a programming language are:
 
 1. **Speed of writing.** How quick it is for the scientist to get their ideas from a piece of paper/their brain into a runnable prototype on a computer.
 2. **Speed of execution.** How quick the written code is run by the computer.
@@ -53,7 +53,7 @@ _We should point out how surprising this is. Julia is a more recent programming 
 
 ### Extensibility/Composability
 
-This aspect, while often ignored in programming language discussions, is crucial in academia. It can make the difference of a scientific work being a cryptic script forgotten in a hard drive for the rest of time, or instead being a full package (or part of another already established package) that other scientists can then re-use and continue from to accelerate their own research.
+This aspect, while often ignored in programming language discussions, is crucial in academia. It can make the difference of a scientific work being a cryptic script forgotten in a hard drive for the rest of time, or instead being a full package (or part of another already established package) that other scientists can then re-use and continue from to accelerate their own research. Additionally, good extensibility and composability often come with good maintainability (that it is easy to maintain your package in the long term).
 
 Thankfully, Julia is objectively the best tool for extensibility and composability in scientific code. When it comes to composability with software from other languages, Julia allows _natively_ calling C/FORTRAN code. Packages such as PythonCall.jl or RCall.jl allows directly calling code from the respective languages (in fact, PythonCall.jl allows the typical object oriented syntax to be used in Julia).
 
