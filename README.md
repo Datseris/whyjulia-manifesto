@@ -12,6 +12,7 @@ _(clearly, this post is expressing the views of the contributors of this GitHub 
    3. [Available libraries](#available-libraries)
    4. [Extensibility/Composability](#extensibilitycomposability)
 4. [Detailed advantages of Julia](#detailed-advantages-of-julia)
+5. [But why do you try so hard to convince people?](#but-why-do-you-try-so-hard-to-convince-people)
 
 
 ## What's a programming language?
@@ -79,3 +80,9 @@ This section goes through specific advantages of Julia in a bullet-point list. I
 9.  **Exceptionally strong integrated package manager**: Julia's package manager is just another package. It is flexible, strong, leading to less ambiguities versus other languages. On top of it, a strong binary shipping system is built. This all means that everything runs everywhere: no `makefile` nonsence, no spending weeks figuring out how to install things, no worries whether your program will be able to run on Windows. Everything is a 1-click install.
 10. **Welcoming and responsive community**: My experience using Julia for 6+ years is that it has one of the most welcoming and responsive communities I have encountered. New questions asked on the official Julia Discourse forum or Slack channels consistently get answers within minutes. This means that there is no real reason to worry that your questions won't get answers due to the relatively smaller community of Julia versus e.g., Python.
 11. **Many large-scale projects and organizations have already adopted Julia**: For example, the USA federal government uses Julia for its cost-benefit analysis of climate change (https://www.mimiframework.org/). A blend of MIT, CalTech, and JPL scientists use Julia to create a brand new Earth System Model (https://clima.caltech.edu/). NASA switched from MATLAB to Julia for its Launch Service simulations, resulting in a 15,000x performance acceleration and and an overall more flexible code base that is also easier to learn (https://www.youtube.com/watch?v=tQpqsmwlfY0).
+
+## But why do you try so hard to convince people?
+
+This repository is not funded by Julia-related companies or funded by anything for that matter! We try to convince people because **we genuinely believe that Julia can accelerate scientific progress and increase openness in code in academia**. It's a better future for everyone :)
+
+_(Full disclosure: authors of this post also develop packages for the Julia programming language. More Julia users means more potential users for these packages, which means more potential contributors for these packages. However, the potential increase in contributors is such a low probability event for a given "conversion" to Julia, that it cannot form a basis for trying to convince people in the first place.)_
