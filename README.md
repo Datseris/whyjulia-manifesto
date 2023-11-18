@@ -1,6 +1,7 @@
 # Why Julia - a Manifesto.
 
-The purpose of this repository is to be an accessible and well-formulated summary of the reasons academia should be using the Julia programming language. Feel free to share it with interested parties that ask "Why Julia?". The post is mainly targeting academic applications and scientific computing.
+The purpose of this repository is to be an accessible and well-formulated summary of the reasons academia should be using the Julia programming language for scientific computing / computational sciences / data analysis / research software engineering.
+Feel free to share it with interested parties that ask "Why Julia?".
 
 _(clearly, this post is expressing the views of the contributors of this GitHub repository; nevertheless, these views are based on factual information provided explicitly in the later sections)_
 
