@@ -12,6 +12,7 @@ _(clearly, this post is expressing the views of the contributors of this GitHub 
    2. [Speed of execution](#speed-of-execution)
    3. [Available libraries](#available-libraries)
    4. [Extensibility/Composability](#extensibilitycomposability)
+   5. [Accessibility/shareable/reproducibility](#accessibilityshareablereproducibility)
 4. [Detailed advantages of Julia](#detailed-advantages-of-julia)
 5. [But why do you try so hard to convince people?](#but-why-do-you-try-so-hard-to-convince-people)
 
@@ -22,12 +23,13 @@ A programming language is a tool for the scientist to get their job done, while 
 
 ## What's the core aspects of a programming language?
 
-Keeping it simple and with academia in mind, the four most important aspects of a programming language are:
+Keeping it simple and with academia in mind, the most important aspects of a programming language are:
 
 1. **Speed of writing.** How quick it is for the scientist to get their ideas from a piece of paper/their brain into a runnable prototype on a computer.
 2. **Speed of execution.** How quick the written code is run by the computer.
 3. **Available libraries.** How many good packages/extensions are there that provide relevant functionality out-of-the-box, and whether they are well documented as well.
 4. **Extensibility/Composability.** How easy it is to re-use, or extend, or compose with, an existing library, even in a different programming language.
+5. **Accessibility/shareable/reproducibility.** How easy it is to get started with the language (installations and learning the first steps), and how easy it is to share the work with other scientists so that they effortlessly reproduce the shared work.
 
 Now we may ask ourselves: _"What is the ideal programming language?"_
 
@@ -53,7 +55,7 @@ _We should point out how surprising this is. Julia is a more recent programming 
 
 ### Extensibility/Composability
 
-This aspect, while often ignored in programming language discussions, is crucial in academia. It can make the difference of a scientific work being a cryptic script forgotten in a hard drive for the rest of time, or instead being a full package (or part of another already established package) that other scientists can then re-use and continue from to accelerate their own research.
+This aspect, while often ignored in programming language discussions, is crucial in academia. It can make the difference of a scientific work being a cryptic script forgotten in a hard drive for the rest of time, or instead being a full package (or part of another already established package) that other scientists can then re-use and continue from to accelerate their own research. Additionally, good extensibility and composability typically also means code re-use, which itself means good maintainability (that it is easy to maintain your codebase in the long term).
 
 Thankfully, Julia is objectively the best tool for extensibility and composability in scientific code. When it comes to composability with software from other languages, Julia allows _natively_ calling C/FORTRAN code. Packages such as PythonCall.jl or RCall.jl allows directly calling code from the respective languages (in fact, PythonCall.jl allows the typical object oriented syntax to be used in Julia).
 
@@ -61,12 +63,22 @@ But the real strength of Julia lies within the composability and extensibility t
 
 (proof of claims: https://www.youtube.com/watch?v=kc9HwsxE1OY)
 
+### Accessibility/shareable/reproducibility
+
+Getting started in Julia is simple!
+Installing the core language is a simple download-and-click-install for every operating system. Julia features a version multiplexor called `juliaup`, that makes managing multiple Julia versions a trivial one-liner.
+Installing packages for the language is equally simple.
+Julia features an exceptionally strong package manager (which is itself a package of the language). Since most packages of Julia are written in pure Julia, installing them is also a simple one line command. When it comes to binary dependencies, Julia has a pioneering pre-built binary system: binaries are built, compiled, and stored, for any system and platform combinations, and are automatically installed with a package that has binary dependencies. No more spending weeks to just install your software!
+
+Sharing Julia projects is equally simple due to the strong package manager. A Julia environment (which are two text files) carries a list of of all the packages used, and their dependencies, all the way down to the exact git-commit of the used package. One can share this environment and the associated scripts and the receiving user can instantiate them, reproducing the same environment. This runs the same code with the same versions hence yielding the same output.
+
 ## Detailed advantages of Julia
 
 This section goes through specific advantages of Julia in a bullet-point list. It also gives references and provides further reading resources.
 
 1. **It solves the two language problem**: it is a dynamic and interactive language that allows real time scientific exploration typically done in interpreted languages like Python, but still offers the performance of static low level languages such as C. Julia works by compiling machine level code and hence all basic programming concepts such as iteration, broadcasting, function-as-arguments, are fast by themselves. Hence, you would never have to "re-write" a code in Julia in another language to make it faster! This way you spent less time writing (or re-writing code) and more time progressing your work. It also means that you don't have to be proficient in two programming languages to get involved with a library development.
 2. **It occupies the "sweet spot" of high performance and simple code** in a global comparison between all programming languages: <img src="speed_vs_codesize_comparison.png" alt="speed vs codesize language comparison" width=500>
+
    This figure is created by developers of the [Chapel Language](https://chapel-lang.org/), which does not particularly target academic usage. The image comes courtesy of a public post: https://twitter.com/ChapelLanguage/status/1623389242822111232 .
 3. **Its syntax is intuitive and as close to math as possible**: The combination of high level syntax, Unicode, and simple to reason for code makes the code faster to write and read. Additionally, the modern Julia syntax parser eliminates the use of many "decorators" such as ending lines with `;` or requiring indentation to denote code blocks, as it understands automatically when commands start and end.
 4. **Multiple dispatch**: is the core programming paradigm of Julia and is used with functional programming. In our opinion is the [most suitable paradigm to implement scientific thought in code](https://www.youtube.com/watch?v=7y-ahkUsIrY) because it parallelizes scientific thinking: a "process" (function) does not belong to any particular data structure. Multiple dispatch and the exponential expressive power it brings are showcased well in [this talk by Stefan Karpinski](https://www.youtube.com/watch?v=kc9HwsxE1OY).
@@ -81,6 +93,8 @@ This section goes through specific advantages of Julia in a bullet-point list. I
 9.  **Exceptionally strong integrated package manager**: Julia's package manager is just another package. It is flexible, strong, leading to less ambiguities versus other languages. On top of it, a strong binary shipping system is built. This all means that everything runs everywhere: no `makefile` nonsence, no spending weeks figuring out how to install things, no worries whether your program will be able to run on Windows. Everything is a 1-click install.
 10. **Welcoming and responsive community**: My experience using Julia for 6+ years is that it has one of the most welcoming and responsive communities I have encountered. New questions asked on the official Julia Discourse forum or Slack channels consistently get answers within minutes. This means that there is no real reason to worry that your questions won't get answers due to the relatively smaller community of Julia versus e.g., Python.
 11. **Many large-scale projects and organizations have already adopted Julia**: For example, the USA federal government uses Julia for its cost-benefit analysis of climate change (https://www.mimiframework.org/). A blend of MIT, CalTech, and JPL scientists use Julia to create a brand new Earth System Model (https://clima.caltech.edu/). NASA switched from MATLAB to Julia for its Launch Service simulations, resulting in a 15,000x performance acceleration and and an overall more flexible code base that is also easier to learn (https://www.youtube.com/watch?v=tQpqsmwlfY0).
+12. **Easy installs and pre-built binary dependencies**: In Julia the days where you would have to spend weeks, while being supervised by the senior postdoc of the group, _just to install a software_ are long gone. Since most Julia packages are written in Julia, installing anything is a trivial 1 line of code. But even in cases of binary dependencies, Julia has made things rather easy! It offers persistent binary artifact storage via Yggdrasil by building binary system images for any platform combinations: [BinaryBuilder.jl](https://docs.binarybuilder.org/stable/) (and see the [official blog post](https://julialang.org/blog/2019/11/artifacts/) for more details).
+
 
 ## But why do you try so hard to convince people?
 
