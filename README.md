@@ -23,7 +23,7 @@ A programming language is a tool for the scientist to get their job done, while 
 
 ## What's the core aspects of a programming language?
 
-Keeping it simple and with academia in mind, the most important aspects of a programming language are:
+Keeping it simple and with academia in mind, the most fundamentally important aspects of a programming language are:
 
 1. **Speed of writing.** How quick it is for the scientist to get their ideas from a piece of paper/their brain into a runnable prototype on a computer.
 2. **Speed of execution.** How quick the written code is run by the computer.
@@ -37,7 +37,7 @@ It is the one that is the best in all of the aforementioned fundamental aspects.
 
 ## Julia is the best language (for science)
 
-When compared over the four fundamental aspects, **Julia emerges as the clear overall winner**. More details and references are given in the next section. The summary is:
+When compared over these fundamental aspects, **Julia emerges as the clear overall winner**. More details and references are given in the next section. The summary is:
 
 ### Speed of writing
 
