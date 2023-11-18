@@ -6,7 +6,7 @@ Feel free to share it with interested parties that ask "Why Julia?".
 _(clearly, this post is expressing the views of the contributors of this GitHub repository; nevertheless, these views are based on factual information provided explicitly in the later sections)_
 
 1. [What's a programming language?](#whats-a-programming-language)
-2. [What's the core aspects of a programming language?](#whats-the-core-aspects-of-a-programming-language)
+2. [What's most important in a programming language?](#whats-most-important-in-a-programming-language)
 3. [Julia is the best language (for science)](#julia-is-the-best-language-for-science)
    1. [Speed of writing](#speed-of-writing)
    2. [Speed of execution](#speed-of-execution)
@@ -21,7 +21,7 @@ _(clearly, this post is expressing the views of the contributors of this GitHub 
 
 A programming language is a tool for the scientist to get their job done, while allowing their work to be further re-used and extended upon by other scientists.
 
-## What's the core aspects of a programming language?
+## What's most important in a programming language?
 
 Keeping it simple and with academia in mind, the most fundamentally important aspects of a programming language are:
 
