@@ -65,7 +65,12 @@ But the real strength of Julia lies within the composability and extensibility t
 
 ### Accessibility/shareable/reproducibility
 
+Getting started in Julia is simple!
+Installing the core language is a simple download-and-click-install for every operating system. Julia features a version multiplexor called `juliaup`, that makes managing multiple Julia versions a trivial one-liner.
+Installing packages for the language is equally simple.
+Julia features an exceptionally strong package manager (which is itself a package of the language). Since most packages of Julia are written in pure Julia, installing them is also a simple one line command. When it comes to binary dependencies, Julia has a pioneering pre-built binary system: binaries are built, compiled, and stored, for any system and platform combinations, and are automatically installed with a package that has binary dependencies. No more spending weeks to just install your software!
 
+Sharing Julia projects is equally simple due to the strong package manager. A Julia environment (which are two text files) carries a list of of all the packages used, and their dependencies, all the way down to the exact git-commit of the used package. One can share this environment and the associated scripts and the receiving user can instantiate them, reproducing the same environment. This runs the same code with the same versions hence yielding the same output.
 
 ## Detailed advantages of Julia
 
@@ -73,6 +78,7 @@ This section goes through specific advantages of Julia in a bullet-point list. I
 
 1. **It solves the two language problem**: it is a dynamic and interactive language that allows real time scientific exploration typically done in interpreted languages like Python, but still offers the performance of static low level languages such as C. Julia works by compiling machine level code and hence all basic programming concepts such as iteration, broadcasting, function-as-arguments, are fast by themselves. Hence, you would never have to "re-write" a code in Julia in another language to make it faster! This way you spent less time writing (or re-writing code) and more time progressing your work. It also means that you don't have to be proficient in two programming languages to get involved with a library development.
 2. **It occupies the "sweet spot" of high performance and simple code** in a global comparison between all programming languages: <img src="speed_vs_codesize_comparison.png" alt="speed vs codesize language comparison" width=500>
+
    This figure is created by developers of the [Chapel Language](https://chapel-lang.org/), which does not particularly target academic usage. The image comes courtesy of a public post: https://twitter.com/ChapelLanguage/status/1623389242822111232 .
 3. **Its syntax is intuitive and as close to math as possible**: The combination of high level syntax, Unicode, and simple to reason for code makes the code faster to write and read. Additionally, the modern Julia syntax parser eliminates the use of many "decorators" such as ending lines with `;` or requiring indentation to denote code blocks, as it understands automatically when commands start and end.
 4. **Multiple dispatch**: is the core programming paradigm of Julia and is used with functional programming. In our opinion is the [most suitable paradigm to implement scientific thought in code](https://www.youtube.com/watch?v=7y-ahkUsIrY) because it parallelizes scientific thinking: a "process" (function) does not belong to any particular data structure. Multiple dispatch and the exponential expressive power it brings are showcased well in [this talk by Stefan Karpinski](https://www.youtube.com/watch?v=kc9HwsxE1OY).
