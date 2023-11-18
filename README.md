@@ -57,7 +57,7 @@ This aspect, while often ignored in programming language discussions, is crucial
 
 Thankfully, Julia is objectively the best tool for extensibility and composability in scientific code. When it comes to composability with software from other languages, Julia allows _natively_ calling C/FORTRAN code. Packages such as PythonCall.jl or RCall.jl allows directly calling code from the respective languages (in fact, PythonCall.jl allows the typical object oriented syntax to be used in Julia).
 
-But the real strength of Julia lies within the composability and extensibility that Julia packages have with each other. Julia has brought in an unprecedented amount of code re-use, enabling packages to easily communicate with each other and extend each other, all without the boilerplate code and name spaces issues one encounters in packages like Python. This is part of the reason that Julia has seen such an explosive growth of available packages in practically every scientific field.
+But the real strength of Julia lies within the composability and extensibility that Julia packages have with each other. Julia has brought in an unprecedented amount of code re-use, enabling packages to easily communicate with each other and extend each other, all without the boilerplate code and name spaces issues one encounters in languages like Python. This is part of the reason that Julia has seen such an explosive growth of available packages in practically every scientific field.
 
 (proof of claims: https://www.youtube.com/watch?v=kc9HwsxE1OY)
 
