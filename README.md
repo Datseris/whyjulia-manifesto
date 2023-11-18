@@ -12,6 +12,7 @@ _(clearly, this post is expressing the views of the contributors of this GitHub 
    2. [Speed of execution](#speed-of-execution)
    3. [Available libraries](#available-libraries)
    4. [Extensibility/Composability](#extensibilitycomposability)
+   5. [Accessibility/shareable/reproducibility](#accessibilityshareablereproducibility)
 4. [Detailed advantages of Julia](#detailed-advantages-of-julia)
 5. [But why do you try so hard to convince people?](#but-why-do-you-try-so-hard-to-convince-people)
 
@@ -28,6 +29,7 @@ Keeping it simple and with academia in mind, the most important aspects of a pro
 2. **Speed of execution.** How quick the written code is run by the computer.
 3. **Available libraries.** How many good packages/extensions are there that provide relevant functionality out-of-the-box, and whether they are well documented as well.
 4. **Extensibility/Composability.** How easy it is to re-use, or extend, or compose with, an existing library, even in a different programming language.
+5. **Accessibility/shareable/reproducibility.** How easy it is to get started with the language (installations and learning the first steps), and how easy it is to share the work with other scientists so that they effortlessly reproduce the shared work.
 
 Now we may ask ourselves: _"What is the ideal programming language?"_
 
@@ -60,6 +62,10 @@ Thankfully, Julia is objectively the best tool for extensibility and composabili
 But the real strength of Julia lies within the composability and extensibility that Julia packages have with each other. Julia has brought in an unprecedented amount of code re-use, enabling packages to easily communicate with each other and extend each other, all without the boilerplate code and name spaces issues one encounters in languages like Python. This is part of the reason that Julia has seen such an explosive growth of available packages in practically every scientific field.
 
 (proof of claims: https://www.youtube.com/watch?v=kc9HwsxE1OY)
+
+### Accessibility/shareable/reproducibility
+
+
 
 ## Detailed advantages of Julia
 
