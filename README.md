@@ -41,7 +41,9 @@ When compared over these fundamental aspects, **Julia emerges as the clear overa
 
 ### Speed of writing
 
-Julia is a dynamic language allowing interactive and flexible code creation and exploration. The syntax of Julia is as close as possible to math, and also modern (high level). It also includes innovative progress such as automatically understanding when statements end or allowing usage of Unicode. Multiple dispatch is a programming paradigm that is most similar to scientific thought, because it detaches processes from data types. This accelerates the process of getting the scientific ideas into runnable code. Julia also does not require explicitly type-annotating anything (although it is possible to do so).
+Julia is a dynamic language allowing interactive and flexible code creation and exploration. The syntax of Julia is as close as possible to math, and also modern (high level). It also includes innovative progress such as automatically understanding when statements end or allowing usage of Unicode. These advances make it so that often the Julia code is a 1-to-1 mapping to the scientific paper it was implemented from. Julia also does not require explicitly type-annotating anything (although it is possible to do so), further increasing the efficiency of writing code.
+
+Multiple dispatch is a programming paradigm that is most similar to scientific thought, because it detaches processes from data types. This accelerates the process of getting the scientific ideas into runnable code.
 
 ### Speed of execution
 
