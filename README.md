@@ -47,7 +47,7 @@ Multiple dispatch is a programming paradigm that is most similar to scientific t
 
 ### Speed of execution
 
-Julia compiles to machine code that is routinely as fast as C/FORTRAN due to its intelligent type inference system. That is, standard user Julia code gets compiled to efficient machine code - no need to arbitrary language extensions (e.g., Numba, Cython, ...). Julia has native support for parallel and distributed computing. These aspects are also easy to use. Julia has strong GPU support via packages which are also easy to use. The Julia package ecosystem has even more packages for code performance acceleration such as Transducers.jl, ThreadsX.jl, FLoops.jl, MultiThreadedCaches.jl, ParallelAccelerator.jl, Dagger.jl, and more.
+Julia compiles to machine code that is routinely as fast as C/FORTRAN due to its intelligent type inference system. That is, standard user Julia code gets compiled to efficient machine code - no need to arbitrary language extensions (e.g., Numba, Cython, ...). Julia has native support for parallel and distributed computing. These aspects are also easy to use. Julia has strong GPU support via packages which are also easy to use. The Julia package ecosystem has even more packages for code performance acceleration such as [Transducers.jl](https://github.com/JuliaFolds/Transducers.jl), [ThreadsX.jl](https://github.com/tkf/ThreadsX.jl), [FLoops.jl](https://github.com/JuliaFolds/FLoops.jl), [MultiThreadedCaches.jl](https://github.com/JuliaConcurrent/MultiThreadedCaches.jl), [ParallelAccelerator.jl](https://github.com/IntelLabs/ParallelAccelerator.jl), [Dagger.jl](https://github.com/JuliaParallel/Dagger.jl), and more.
 
 ### Available libraries
 
