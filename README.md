@@ -37,7 +37,7 @@ It is the one that is the best in all of the aforementioned fundamental aspects.
 
 ## Julia is the best language (for science)
 
-When compared over these fundamental aspects, **Julia emerges as the clear overall winner**. More details and references are given in the next section. The summary is:
+When compared over these fundamental aspects, **Julia emerges as the overall winner** because it performs exceptionally well in all of them. More details and references are given in the "detailed". The summary is:
 
 ### Speed of writing
 
@@ -59,18 +59,18 @@ _We should point out how surprising this is. Julia is a more recent programming 
 
 This aspect, while often ignored in programming language discussions, is crucial in academia. It can make the difference of a scientific work being a cryptic script forgotten in a hard drive for the rest of time, or instead being a full package (or part of another already established package) that other scientists can then re-use and continue from to accelerate their own research. Additionally, good extensibility and composability typically also means code re-use, which itself means good maintainability (that it is easy to maintain your codebase in the long term).
 
-Thankfully, Julia is objectively the best tool for extensibility and composability in scientific code. When it comes to composability with software from other languages, Julia allows _natively_ calling C/FORTRAN code. Packages such as [PythonCall.jl](https://github.com/cjdoris/PythonCall.jl) or [RCall.jl](https://github.com/JuliaInterop/RCall.jl) allows directly calling code from the respective languages (in fact, PythonCall.jl allows the typical object oriented syntax to be used in Julia).
+Julia is one of the best tools on the market for extensibility and composability in scientific code. When it comes to composability with software from other languages, Julia allows _natively_ calling C/FORTRAN code. Packages such as [PythonCall.jl](https://github.com/cjdoris/PythonCall.jl) or [RCall.jl](https://github.com/JuliaInterop/RCall.jl) allows directly calling code from the respective languages (in fact, PythonCall.jl allows the typical object oriented syntax to be used in Julia).
 
-But the real strength of Julia lies within the composability and extensibility that Julia packages have with each other. Julia has brought in an unprecedented amount of code re-use, enabling packages to easily communicate with each other and extend each other, all without the boilerplate code and name spaces issues one encounters in languages like Python. This is part of the reason that Julia has seen such an explosive growth of available packages in practically every scientific field.
+But the real strength of Julia lies within the composability and extensibility that Julia packages have with each other. Julia has brought in an unprecedented amount of code re-use, enabling packages to easily communicate with each other and extend each other, all without the boilerplate code and name spaces issues one encounters in languages like Python. This is part of the reason that Julia has seen such an explosive growth of available packages in practically every scientific field. And the basis of all this composability is Julia's multiple dispatch system.
 
-(proof of claims: https://www.youtube.com/watch?v=kc9HwsxE1OY)
+(proof of claims: https://www.youtube.com/watch?v=kc9HwsxE1OY and https://www.youtube.com/watch?v=2MBD10lqWp8 and https://github.com/Datseris/Zero2Hero-JuliaWorkshop for a hands-on demonstration on composability)
 
 ### Accessibility/Shareability/Reproducibility
 
 Getting started in Julia is simple!
 Installing the core language is a simple download-and-click-install for every operating system. Julia features a version multiplexer called [`juliaup`](https://github.com/JuliaLang/juliaup), that makes managing multiple Julia versions a trivial one-liner.
 Installing packages for the language is equally simple.
-Julia features an exceptionally strong [package manager](https://github.com/JuliaLang/Pkg.jl) (which is itself a package of the language). Since most packages of Julia are written in pure Julia, installing them is also a simple one line command. When it comes to binary dependencies, Julia has a pioneering pre-built binary system: binaries are built, compiled, and stored, for any system and platform combinations, and are automatically installed with a package that has binary dependencies. No more spending weeks to just install your software!
+Julia features an powerful [package manager](https://github.com/JuliaLang/Pkg.jl) (which is itself a package of the language). Since most packages of Julia are written in pure Julia, installing them is also a simple one line command. When it comes to binary dependencies, Julia has a pioneering pre-built binary system: binaries are built, compiled, and stored, for any system and platform combinations, and are automatically installed with a package that has binary dependencies. No more spending weeks to just install your software!
 
 Sharing Julia projects is equally simple due to the strong package manager. A Julia environment (which are two text files) carries a list of of all the packages used, and their dependencies, all the way down to the exact git-commit of the used package. One can share this environment and the associated scripts and the receiving user can instantiate them, reproducing the same environment. This runs the same code with the same versions hence yielding the same output.
 
