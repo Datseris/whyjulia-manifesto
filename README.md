@@ -1,6 +1,6 @@
 # Why Julia - a Manifesto.
 
-The purpose of this repository is to be an accessible and well-formulated summary of the reasons academia should be using the [Julia programming language](https://julialang.org) for scientific computing / computational sciences / data analysis / research software engineering.
+The purpose of this repository is to be an accessible and well-formulated summary of the benefits of using the [Julia programming language](https://julialang.org) for scientific computing / computational sciences / data analysis / research software engineering and in general in the academic world.
 Feel free to share it with interested parties that ask "Why Julia?".
 
 _(clearly, this post is expressing the views of the contributors of this GitHub repository; nevertheless, these views are based on factual information provided explicitly in the later sections)_
@@ -100,6 +100,6 @@ This section goes through specific advantages of Julia in a bullet-point list. I
 
 ## But why do you try so hard to convince people?
 
-This repository is not funded by Julia-related companies or funded by anything for that matter! We try to convince people because **we genuinely believe that Julia can accelerate scientific progress and increase openness in code in academia**. It's a better future for everyone :)
+This manifesto is not about convincing per-se; it is about justifying the act of convincing. To be clear, we _are trying to convince people_ to join Julia! But why? Well, this repository is not funded by Julia-related companies or funded by anything for that matter! We try to convince people because **we genuinely believe that Julia can accelerate scientific progress and increase openness in code in academia**. It's a better future for everyone :)
 
 _(Full disclosure: authors of this post also develop packages for the Julia programming language. More Julia users means more potential users for these packages, which means more potential contributors for these packages. However, the potential increase in contributors is such a low probability event for a given "conversion" to Julia, that it cannot form a basis for trying to convince people in the first place.)_
