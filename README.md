@@ -33,11 +33,11 @@ Keeping it simple and with academia in mind, the most fundamentally important as
 
 Now we may ask ourselves: _"What is the ideal programming language?"_
 
-It is the one that is the best in all of the aforementioned fundamental aspects. This language does not exist as pros-and-cons are an integral part of the real world. Therefore, the best _real_ language is the one that overall accumulates the highest quality when explored across these four fundamental aspects.
+It is the one that is the best in all of the aforementioned fundamental aspects. This language does not exist as pros-and-cons are an integral part of the real world. Therefore, the best _real_ language is the one that overall accumulates the highest quality when explored across these fundamental aspects.
 
 ## Julia is the best language (for science)
 
-When compared over these fundamental aspects, **Julia emerges as the overall winner** because it performs exceptionally well in all of them. More details and references are given in the "detailed". The summary is:
+When compared over these fundamental aspects, **Julia emerges as the overall winner** because it performs exceptionally well in all of them. More details and references are given in the "detailed" section. The summary is:
 
 ### Speed of writing
 
@@ -47,7 +47,7 @@ Multiple dispatch is a programming paradigm that is most similar to scientific t
 
 ### Speed of execution
 
-Julia compiles to machine code that is routinely as fast as C/FORTRAN due to its intelligent type inference system. That is, standard user Julia code gets compiled to efficient machine code - no need to arbitrary language extensions (e.g., Numba, Cython, ...). Julia has native support for parallel and distributed computing. These aspects are also easy to use. Julia has strong GPU support via packages which are also easy to use. The Julia package ecosystem has even more packages for code performance acceleration such as [Transducers.jl](https://github.com/JuliaFolds/Transducers.jl), [ThreadsX.jl](https://github.com/tkf/ThreadsX.jl), [FLoops.jl](https://github.com/JuliaFolds/FLoops.jl), [MultiThreadedCaches.jl](https://github.com/JuliaConcurrent/MultiThreadedCaches.jl), [ParallelAccelerator.jl](https://github.com/IntelLabs/ParallelAccelerator.jl), [Dagger.jl](https://github.com/JuliaParallel/Dagger.jl), and more.
+Julia compiles to machine code that is routinely as fast as C/FORTRAN due to its intelligent type inference system. That is, standard user Julia code gets compiled to efficient machine code - no need for arbitrary language extensions (e.g., Numba, Cython, ...). Julia has native support for parallel and distributed computing. These aspects are also easy to use. Julia has strong GPU support via packages which are also easy to use. The Julia package ecosystem has even more packages for code performance acceleration such as [Transducers.jl](https://github.com/JuliaFolds/Transducers.jl), [ThreadsX.jl](https://github.com/tkf/ThreadsX.jl), [FLoops.jl](https://github.com/JuliaFolds/FLoops.jl), [MultiThreadedCaches.jl](https://github.com/JuliaConcurrent/MultiThreadedCaches.jl), [ParallelAccelerator.jl](https://github.com/IntelLabs/ParallelAccelerator.jl), [Dagger.jl](https://github.com/JuliaParallel/Dagger.jl), and more.
 
 ### Available libraries
 
