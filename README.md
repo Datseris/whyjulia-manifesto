@@ -1,5 +1,7 @@
 # Why Julia - a Manifesto.
 
+[![DOI](https://zenodo.org/badge/720188322.svg)](https://zenodo.org/doi/10.5281/zenodo.10252526)
+
 The purpose of this repository is to be an accessible and well-formulated summary of the reasons academia should be using the [Julia programming language](https://julialang.org) for scientific computing / computational sciences / data analysis / research software engineering.
 Feel free to share it with interested parties that ask "Why Julia?".
 
