@@ -33,7 +33,7 @@ Keeping it simple and with academia in mind, the most fundamentally important as
 
 Now we may ask ourselves: _"What is the ideal programming language?"_
 
-It is the one that is the best in all of the aforementioned fundamental aspects. This language does not exist as pros-and-cons are an integral part of the real world. Therefore, the best _real_ language is the one that overall accumulates the highest quality when explored across these five fundamental aspects.
+It is the one that is the best in all of the aforementioned fundamental aspects. This language does not exist as pros-and-cons are an integral part of the real world. Therefore, the best _real_ language is the one that overall accumulates the highest quality when explored across these fundamental aspects.
 
 ## Julia is the best language (for science)
 
