@@ -81,7 +81,9 @@ Sharing Julia projects is equally simple due to the strong package manager. A Ju
 This section goes through specific advantages of Julia in a bullet-point list. It also gives references and provides further reading resources.
 
 1. **It solves the two language problem**: it is a dynamic and interactive language that allows real time scientific exploration typically done in interpreted languages like Python, but still offers the performance of static low level languages such as C. Julia works by compiling machine level code and hence all basic programming concepts such as iteration, broadcasting, function-as-arguments, are fast by themselves. Hence, you would never have to "re-write" a code in Julia in another language to make it faster! This way you spent less time writing (or re-writing code) and more time progressing your work. It also means that you don't have to be proficient in two programming languages to get involved with a library development.
-2. **It occupies the "sweet spot" of high performance and simple code** in a global comparison between all programming languages: <img src="speed_vs_codesize_comparison.png" alt="speed vs codesize language comparison" width=500>
+2. **It occupies the "sweet spot" of high performance and simple code** in a global comparison between all programming languages:
+
+   <img src="speed_vs_codesize_comparison.png" alt="speed vs codesize language comparison" width=500>
 
    This figure is created by developers of the [Chapel Language](https://chapel-lang.org/), which does not particularly target academic usage. The image comes courtesy of a public post: https://twitter.com/ChapelLanguage/status/1623389242822111232 .
 3. **Its syntax is intuitive and as close to math as possible**: The combination of high level syntax, Unicode, and simple to reason for code makes the code faster to write and read. Additionally, the modern Julia syntax parser eliminates the use of many "decorators" such as ending lines with `;` or requiring indentation to denote code blocks, as it understands automatically when commands start and end.
