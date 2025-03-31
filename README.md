@@ -2,18 +2,18 @@
 
 [![DOI](https://zenodo.org/badge/720188322.svg)](https://zenodo.org/doi/10.5281/zenodo.10252526)
 
-The purpose of this repository is to be an accessible and well-formulated summary of the reasons academia should be using the [Julia programming language](https://julialang.org) for scientific computing / computational sciences / data analysis / research software engineering.
+The purpose of this repository is to be an accessible and well-formulated summary of the reasons the [Julia programming language](https://julialang.org) is the most suitable programming language for computational research / scientific computing / computational sciences / research software engineering.
 Feel free to share it with interested parties that ask "Why Julia?".
 
 _(clearly, this post is expressing the views of the author(s); nevertheless, these views are based on factual information provided explicitly in the later sections)_
 
 1. [What's a programming language?](#whats-a-programming-language)
 2. [What's most important in a programming language?](#whats-most-important-in-a-programming-language)
-3. [Julia is the best language (for science)](#julia-is-the-best-language-for-science)
+3. [Julia is the best language (for computational research)](#julia-is-the-best-language-for-computational-research)
    1. [Speed of writing](#speed-of-writing)
-   2. [Speed of execution](#speed-of-execution)
-   3. [Available libraries](#available-libraries)
-   4. [Extensibility/Composability](#extensibilitycomposability)
+   2. [Available libraries](#available-libraries)
+   3. [Extensibility/Composability](#extensibilitycomposability)
+   4. [Speed of execution](#speed-of-execution)
    5. [Accessibility/Shareability/Reproducibility](#accessibilityshareabilityreproducibility)
 4. [Detailed advantages of Julia](#detailed-advantages-of-julia)
 5. [But why do you try so hard to convince people?](#but-why-do-you-try-so-hard-to-convince-people)
@@ -21,35 +21,33 @@ _(clearly, this post is expressing the views of the author(s); nevertheless, the
 
 ## What's a programming language?
 
-A programming language is a tool for the scientist to get their job done, while allowing their work to be further re-used and extended upon by other scientists.
+A programming language is a tool for the research to get their job done, while allowing their work to be further re-used and extended upon by others.
 
 ## What's most important in a programming language?
 
-Keeping it simple and with academia in mind, the most fundamentally important aspects of a programming language are:
+Keeping it simple and with **computational research in mind**, the most fundamentally important aspects of a programming language are:
 
-1. **Speed of writing.** How quick it is for the scientist to get their ideas from a piece of paper/their brain into a runnable prototype on a computer.
-2. **Speed of execution.** How quick the written code is run by the computer.
-3. **Available libraries.** How many good packages/extensions are there that provide relevant functionality out-of-the-box, and whether they are well documented as well.
-4. **Extensibility/Composability.** How easy it is to re-use, or extend, or compose with, an existing library, even in a different programming language.
+1. **Speed of writing.** How quick it is for the researcher to get their ideas from a piece of paper/their brain into a runnable prototype on a computer.
+2. **Available libraries.** How many good packages/extensions are there that provide relevant functionality out-of-the-box, and whether they are well documented as well.
+3. **Extensibility/Composability.** How easy it is to re-use, or extend, or compose with, an existing library, even in a different programming language.
+4. **Speed of execution.** How quick the written code is run by the computer.
 5. **Accessibility/Shareability/Reproducibility.** How easy it is to get started with the language (installations and learning the first steps), and how easy it is to share the work with other scientists so that they effortlessly reproduce the shared work.
 
-Now we may ask ourselves: _"What is the ideal programming language?"_
+In our experience, when it comes to research the "human time" is often more important than then the "execution time". By its fundamental definition, research requires you to do something new by altering something existing or implementing something brand new all together. If it requires you months upon months to alter some programming framework to achieve your goals, well then how fast this framework runs on a computer quickly becomes irrelevant!
+
+With this in mind, we may now ask ourselves: _"What is the ideal programming language?"_
 
 It is the one that is the best in all of the aforementioned fundamental aspects. This language does not exist as pros-and-cons are an integral part of the real world. Therefore, the best _real_ language is the one that overall accumulates the highest quality when explored across these fundamental aspects.
 
-## Julia is the best language (for science)
+## Julia is the best language (for computational research)
 
-When compared over these fundamental aspects, **Julia emerges as the overall winner** because it performs exceptionally well in all of them. More details and references are given in the "detailed" section. The summary is:
+When compared over these fundamental aspects, **Julia emerges as the overall winner**, because it performs exceptionally well in all of them _and_ it **vastly reduces the human time required to perform computational research**. More details and references are given in the "detailed" section. The summary is:
 
 ### Speed of writing
 
-Julia is a dynamic language allowing interactive and flexible code creation and exploration. The syntax of Julia is as close as possible to math, and also modern (high level). It also includes innovative progress such as automatically understanding when statements end or allowing usage of Unicode. These advances make it so that often the Julia code is a 1-to-1 mapping to the scientific paper it was implemented from. Julia also does not require explicitly type-annotating anything (although it is possible to do so), further increasing the efficiency of writing code.
+Julia is a dynamic language allowing interactive and flexible code creation and exploration. The syntax of Julia is as close as possible to math, and also modern (high level). The parser automatically understands when statements end and allows usage of Unicode. These advances make it so that often the Julia code is a 1-to-1 mapping to the scientific paper it was implemented from. Julia also does not require explicitly type-annotating anything (although it is possible to do so), further increasing the efficiency of writing code.
 
 Multiple dispatch is a programming paradigm that is most similar to scientific thought, because it detaches processes from data types. This accelerates the process of getting the scientific ideas into runnable code.
-
-### Speed of execution
-
-Julia compiles to machine code that is routinely as fast as C/FORTRAN due to its intelligent type inference system. That is, standard user Julia code gets compiled to efficient machine code - no need for arbitrary language extensions (e.g., Numba, Cython, ...). Julia has native support for parallel and distributed computing. These aspects are also easy to use. Julia has strong GPU support via packages which are also easy to use. The Julia package ecosystem has even more packages for code performance acceleration such as [Transducers.jl](https://github.com/JuliaFolds/Transducers.jl), [ThreadsX.jl](https://github.com/tkf/ThreadsX.jl), [FLoops.jl](https://github.com/JuliaFolds/FLoops.jl), [MultiThreadedCaches.jl](https://github.com/JuliaConcurrent/MultiThreadedCaches.jl), [ParallelAccelerator.jl](https://github.com/IntelLabs/ParallelAccelerator.jl), [Dagger.jl](https://github.com/JuliaParallel/Dagger.jl), and more.
 
 ### Available libraries
 
@@ -63,9 +61,16 @@ This aspect, while often ignored in programming language discussions, is crucial
 
 Julia is one of the best tools on the market for extensibility and composability in scientific code. When it comes to composability with software from other languages, Julia allows _natively_ calling C/FORTRAN code. Packages such as [PythonCall.jl](https://github.com/cjdoris/PythonCall.jl) or [RCall.jl](https://github.com/JuliaInterop/RCall.jl) allows directly calling code from the respective languages (in fact, PythonCall.jl allows the typical object oriented syntax to be used in Julia).
 
-But the real strength of Julia lies within the composability and extensibility that Julia packages have with each other. Julia has brought in an unprecedented amount of code re-use, enabling packages to easily communicate with each other and extend each other, all without the boilerplate code and name spaces issues one encounters in languages like Python. This is part of the reason that Julia has seen such an explosive growth of available packages in practically every scientific field. And the basis of all this composability is Julia's multiple dispatch system.
+But the real strength of Julia lies within the composability and extensibility that Julia packages have with each other. Julia has brought in an unprecedented amount of code re-use, enabling packages to easily communicate with each other and extend each other, all without the boilerplate code and name spaces issues one encounters in languages like Python.
+This is part of the reason that Julia has seen such an explosive growth of available packages in practically every scientific field. And the basis of all this composability is Julia's multiple dispatch system.
 
-(proof of claims: https://www.youtube.com/watch?v=kc9HwsxE1OY and https://www.youtube.com/watch?v=2MBD10lqWp8 and https://github.com/Datseris/Zero2Hero-JuliaWorkshop for a hands-on demonstration on composability)
+This great ease of extensibility, in combination with Julia's introspection capabilities, gives birth to a phenomenon that is mainly unheard of in most programming environments, but is actually commonplace in Julia: there is no separation between "user" and "developer" of a Julia software! They are (or can be, should they wish so) one and the same.
+
+(proof of claims: https://www.youtube.com/watch?v=kc9HwsxE1OY and https://www.youtube.com/watch?v=2MBD10lqWp8 and [Block 2 of Zero2Hero Julia Workshop](https://github.com/Datseris/Zero2Hero-JuliaWorkshop/blob/main/2-MultipleDispatch.ipynb) for a hands-on demonstration on composability)
+
+### Speed of execution
+
+Julia compiles to machine code that is routinely as fast as C/FORTRAN due to its intelligent type inference system. That is, standard user Julia code gets compiled to efficient machine code - no need for arbitrary language extensions (e.g., Numba, Cython, ...). Julia has native support for parallel and distributed computing. These aspects are also easy to use. Julia has strong GPU support via packages which are also easy to use. The Julia package ecosystem has even more packages for code performance acceleration such as [Transducers.jl](https://github.com/JuliaFolds/Transducers.jl), [ThreadsX.jl](https://github.com/tkf/ThreadsX.jl), [FLoops.jl](https://github.com/JuliaFolds/FLoops.jl), [MultiThreadedCaches.jl](https://github.com/JuliaConcurrent/MultiThreadedCaches.jl), [ParallelAccelerator.jl](https://github.com/IntelLabs/ParallelAccelerator.jl), [Dagger.jl](https://github.com/JuliaParallel/Dagger.jl), and more.
 
 ### Accessibility/Shareability/Reproducibility
 
@@ -81,7 +86,7 @@ Sharing Julia projects is equally simple due to the strong package manager. A Ju
 This section goes through specific advantages of Julia in a bullet-point list. It also gives references and provides further reading resources.
 
 1. **It solves the two language problem**: it is a dynamic and interactive language that allows real time scientific exploration typically done in interpreted languages like Python, but still offers the performance of static low level languages such as C. Julia works by compiling machine level code and hence all basic programming concepts such as iteration, broadcasting, function-as-arguments, are fast by themselves. Hence, you would never have to "re-write" a code in Julia in another language to make it faster! This way you spent less time writing (or re-writing code) and more time progressing your work. It also means that you don't have to be proficient in two programming languages to get involved with a library development.
-2. **It solves the two cultures problem**: Julia also solves the [two cultures problem](https://scientificcoder.com/my-target-audience#heading-the-two-culture-problem) in scientific computing, because it makes it easy for the "normal" scientist to also be a "software developer". This partly due to point 1, that Julia allows you to do everything in one language and in one slim codebase. However, it is also because it is so damn easy in Julia to take your existing code base and make it into a formal publishable package due to strong package manager support. 
+2. **It solves the two cultures problem**: Julia also solves the [two cultures problem](https://scientificcoder.com/my-target-audience#heading-the-two-culture-problem) in scientific computing, because it makes it easy for the "normal" scientist to also be a "software developer". This partly due to point 1, that Julia allows you to do everything in one language and in one slim codebase. However, it is also because it is so damn easy in Julia to take your existing code base and make it into a formal publishable package due to strong package manager support.
 3. **It occupies the "sweet spot" of high performance and simple code** in a global comparison between all programming languages:
 
    <img src="speed_vs_codesize_comparison.png" alt="speed vs codesize language comparison" width=500>
@@ -114,6 +119,6 @@ This section goes through specific advantages of Julia in a bullet-point list. I
 
 ## But why do you try so hard to convince people?
 
-This repository is not funded by Julia-related companies or funded by anything for that matter! We try to convince people because **we genuinely believe that Julia can accelerate scientific progress and increase openness in code in academia**. It's a better future for everyone :)
+This repository is not funded by Julia-related companies or funded by anything for that matter! We try to convince people because **we genuinely believe that Julia can accelerate scientific progress and improve openness and reproducibility in computational research**. It's a better future for everyone :)
 
 _(Full disclosure: authors of this post also develop packages for the Julia programming language. More Julia users means more potential users for these packages, which means more potential contributors for these packages. However, the potential increase in contributors is such a low probability event for a given "conversion" to Julia, that it cannot form a basis for trying to convince people in the first place.)_
