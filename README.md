@@ -55,6 +55,8 @@ Julia has software organizations for seemingly every scientific area. From high 
 
 _We should point out how surprising this is. Julia is a more recent programming language, has much less users, and has received much less large scale funding, when compared to Python, the currently most popular programming language for scientists. The fact that Julia matches Python's library ecosystem, and in some fields it surpasses it, is a testament to 1) how easy it is to develop, or contribute to, software in Julia, and 2) the amount of software engineering talent that Julia has attracted._
 
+For a list of comparison tables with Julia software, please check [this thread](https://discourse.julialang.org/t/comparison-tables-for-various-julia-packages/128786) on the Julia Discourse website.
+
 ### Extensibility/Composability
 
 This aspect, while often ignored in programming language discussions, is crucial in academia. It can make the difference of a scientific work being a cryptic script forgotten in a hard drive for the rest of time, or instead being a full package (or part of another already established package) that other scientists can then re-use and continue from to accelerate their own research. Additionally, good extensibility and composability typically also means code re-use, which itself means good maintainability (that it is easy to maintain your code base in the long term).
