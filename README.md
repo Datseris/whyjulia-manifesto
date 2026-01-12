@@ -45,7 +45,10 @@ When compared over these fundamental aspects, **Julia emerges as the overall win
 
 ### Speed of writing
 
-Julia is a dynamic language allowing interactive and flexible code creation and exploration. The syntax of Julia is as close as possible to math, and also modern (high level). The parser automatically understands when statements end and allows usage of Unicode. These advances make it so that often the Julia code is a 1-to-1 mapping to the scientific paper it was implemented from. Julia also does not require explicitly type-annotating anything (although it is possible to do so), further increasing the efficiency of writing code.
+Julia is a dynamic language allowing interactive and flexible code creation and exploration. The syntax of Julia is as close as possible to math, and also modern (high level). The Julia parser automatically understands when statements end and allows usage of Unicode. 
+Julia also does not require explicitly type-annotating anything (although it is possible to do so), further increasing the efficiency of writing code.
+These design features make it so that often the Julia code is a 1-to-1 mapping to the scientific paper it was implemented from. 
+They also make the language highly token-efficient, meaning you have to write little for the code to do much. This also matters in the context of LLMs (AI code assistants), as it decreases the context length.
 
 Multiple dispatch is a programming paradigm that is most similar to scientific thought, because it detaches processes from data types. This accelerates the process of getting the scientific ideas into runnable code.
 
@@ -117,6 +120,7 @@ This section goes through specific advantages of Julia in a bullet-point list. I
 12. **Welcoming and responsive community**: My experience using Julia for 6+ years is that it has one of the most welcoming and responsive communities I have encountered. New questions asked on the official Julia Discourse forum or Slack channels consistently get answers within minutes. This means that there is no real reason to worry that your questions won't get answers due to the relatively smaller community of Julia versus e.g., Python.
 13. **Many large-scale projects and organizations have already adopted Julia**: For example, the USA federal government uses Julia for its cost-benefit analysis of climate change (https://www.mimiframework.org/). A blend of MIT, CalTech, and JPL scientists use Julia to create a brand new Earth System Model (https://clima.caltech.edu/). NASA switched from MATLAB to Julia for its Launch Service simulations, resulting in a 15,000x performance acceleration and and an overall more flexible code base that is also easier to learn (https://www.youtube.com/watch?v=tQpqsmwlfY0). Moderna (pharmaceutical company) uses [PumasAI](https://pumas.ai/customer-stories), a software based on Julia, DifferentialEquations.jl and more Julia packages.
 14. **Easy installs and pre-built binary dependencies**: In Julia the days where you would have to spend weeks, while being supervised by the senior postdoc of the group, _just to install a software_ are long gone. Since most Julia packages are written in Julia, installing anything is a trivial 1 line of code. But even in cases of binary dependencies, Julia has made things rather easy! It offers persistent binary artifact storage via Yggdrasil by building binary system images for any platform combinations: [BinaryBuilder.jl](https://docs.binarybuilder.org/stable/) (and see the [official blog post](https://julialang.org/blog/2019/11/artifacts/) for more details).
+15. **Is tied as the most token efficient popular programming language**, according to an analysis of tokenizing solutions of the RossettaCode: [post by Martin Alderson](https://martinalderson.com/posts/which-programming-languages-are-most-token-efficient/).
 
 
 ## But why do you try so hard to convince people?
